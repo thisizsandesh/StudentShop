@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-title {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .login-btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-container">
+            <h2 class="login-title">Login</h2>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="Email1" class="form-label">User ID</label>
+                    <input type="text" class="form-control" id="Email1" name="uname" placeholder="User ID" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="Password1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="Password1" name="upassword" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary login-btn">Login</button>
+                    New User?&nbsp;&nbsp;<a href="register.html" style="text-decoration: none;">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/popper.js"></script>
+
+</body>
+</html>

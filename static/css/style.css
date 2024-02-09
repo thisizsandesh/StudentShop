@@ -1,0 +1,10 @@
+.product-container {
+    height: 200px;  /* Set a fixed height for the container */
+    overflow: hidden;  /* Hide overflow if images are larger */
+}
+
+.product-image {
+    width: 100%;  /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* Maintain the image's aspect ratio and cover the container */
+}

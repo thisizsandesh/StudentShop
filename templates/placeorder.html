@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+                  
+<div class="row">
+    <div class="col-9">
+      <h5 class="bg-info text-white mt-3">Customer details</h5>
+      {% for x in products %}
+         {% if forloop.counter == 1 %}
+          <p><strong>Name :</strong>&nbsp;&nbsp;{{x.uid.first_name}}</p>
+          <p><strong>Mobile :</strong>&nbsp;&nbsp; 9574011360</p>
+          <p><strong>Email:</strong>&nbsp;&nbsp;{{x.uid.email}}</p>
+         {% endif %}
+      {% endfor %} 
+    </div>
+    
+    <div class="col-3">
+      <h5 class="bg-info text-white mt-3">Total Amount</h5>
+      <p><strong>Total ({{n}} items)</strong> (Total 1) <strong>:</strong>&nbsp;&nbsp;&nbsp;Rs.{{total}}</p>
+      <p><strong>Total Amount:</strong>&nbsp;&nbsp;Rs.{{total}}</p>
+      <a href="/makepayment"><button class="btn btn-secondary">Make Payment</button></a>
+    </div>
+  
+    <div class="col-12 mt-3">
+      <h5 class="bg-info text-white">Product Summary</h5>
+      <div class="row">
+        {% for x in products %}
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="{{x.pid.pimage.url}}" class="card-img-top" alt="Product Image" >
+              <div class="card-body">
+                <p class="card-title"><strong>Product Name:</strong>&nbsp;&nbsp;{{x.pid.name}}</p>
+                <p class="card-text"><strong>Price:</strong>&nbsp;&nbsp;{{x.pid.price}}</p>
+                {% if x.pid.cat == 1 %}
+                  <p class="card-text"><strong>Category:</strong>&nbsp;&nbsp;Mobile</p>
+                {% elif x.pid.cat == 2 %}
+                  <p class="card-text"><strong>Category:</strong>&nbsp;&nbsp;Shoes</p>
+                {% else %}
+                  <p class="card-text"><strong>Category:</strong>&nbsp;&nbsp;Cloths</p>
+                {% endif %}
+                <p class="card-text"><strong>Product Detail:</strong>&nbsp;&nbsp;{{x.pid.pdetails}}</p>
+                <a href="/remove/{{x.id}}"><button class="btn btn-secondary mb-2">Remove</button></a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+
+{% endblock 'main' %}

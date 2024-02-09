@@ -1,0 +1,14 @@
+{% include 'header.html' %}
+
+{% block 'main' %}
+
+{% endblock 'main' %}
+
+{% include 'footer.html' %}
+
+
+{% for message in messages %}
+<script>
+    alert("{{ message }}");
+</script>
+{% endfor %}
