@@ -32,3 +32,6 @@ Welcome to StudentShop, a Django-based E-commerce project designed for managing 
 
 - **Admin Panel:** Provide an admin interface to manage products, orders, and user accounts.
 
+
+
+
