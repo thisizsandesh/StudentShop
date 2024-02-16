@@ -15,7 +15,8 @@ Welcome to StudentShop, a Django-based E-commerce project designed for managing 
 
 [Live Demo](#) <!-- Add a link to your live demo if available -->
 
-#[Screenshot] ![Screenshot](https://github.com/thisizsandesh/StudentShop/assets/147138352/03b8aa2f-ea3d-47b3-8486-5b15ebf7dc30)
+![Website Screenshot](screenshot.png) ![Screenshot](https://github.com/thisizsandesh/StudentShop/assets/147138352/9ea71ac9-17b6-4cec-807b-c23d8c2e96f7)
+
 
 
 
