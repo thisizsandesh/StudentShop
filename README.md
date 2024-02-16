@@ -1,6 +1,6 @@
 # StudentShop - Django E-commerce Project
 
-Welcome to StudentShop, a Django-based E-commerce project designed for managing student-related products. This platform allows students to buy and sell various items within the student community.
+Welcome to StudentShop, a Django-based E-commerce project designed for managing student-related products. This platform allows students to buy various items for their daly needs.
 
 ## Table of Contents
 
@@ -15,7 +15,8 @@ Welcome to StudentShop, a Django-based E-commerce project designed for managing 
 
 [Live Demo](#) <!-- Add a link to your live demo if available -->
 
-![Screenshot](screenshot.png) <!-- Add a screenshot of your project -->
+![Screenshot](screenshot.png) ![Screenshot shop](https://github.com/thisizsandesh/StudentShop/assets/147138352/aceda95a-2959-42f6-80b8-9cae5fdb9fc7)
+
 
 ## Features
 
