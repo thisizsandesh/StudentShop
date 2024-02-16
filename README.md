@@ -6,10 +6,6 @@ Welcome to StudentShop, a Django-based E-commerce project designed for managing 
 
 - [Demo](#demo)
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Demo
 
